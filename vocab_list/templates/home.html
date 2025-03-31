@@ -1,0 +1,37 @@
+{% extends "myfirst.html" %}
+{% block content %}
+  <div class="jumbotron text-center mt-5">
+    <h1 class="display-4">Learn the Words That Actually Matter.</h1>
+    <p class="lead">Don’t waste time on vocabulary you’ll never use. Our app helps you master the most essential words and vocab tailored to your life.</p>
+    <a href="{% url 'pricing' %}" class="btn btn-primary btn-lg m-2">Start Learning</a>
+  </div>
+
+  <div class="container text-center my-5">
+    <h2>Why Vorp?</h2>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <h4>🚀 Most Common Words First</h4>
+        <p>Master the 1,000 most-used words that cover 90% of daily conversations.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>🧠 Smarter Learning</h4>
+        <p>Our algorithm picks vocab based on your job, interests, and needs.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>🎯 Use Your Brain Efficiently</h4>
+        <p>Why learn botanical terms if you're a mechanic? Learn only what you need.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light py-5">
+    <div class="container text-center">
+      <h3>How It Works</h3>
+      <ol class="list-unstyled mt-3">
+        <li>1. Choose your language & profession</li>
+        <li>2. Get a curated word list</li>
+        <li>3. Start learning the useful words only</li>
+      </ol>
+    </div>
+  </div>
+{% endblock %}

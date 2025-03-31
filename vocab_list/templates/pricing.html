@@ -1,0 +1,35 @@
+{% extends "myfirst.html" %}
+{% block content %}
+<div class="container my-5">
+  <div class="text-center">
+    <h1 class="display-4">Simple, Transparent Pricing</h1>
+    <p class="lead">One plan. Everything included. Learn smarter, not harder.</p>
+  </div>
+
+  <div class="row justify-content-center my-5">
+    <div class="col-md-6">
+      <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white text-center">
+          <h2 class="mb-0">$20/month</h2>
+          <small>Cancel anytime. No hidden fees.</small>
+        </div>
+        <div class="card-body">
+          <ul class="list-unstyled">
+            <li>✅ Access 1,000+ most essential words</li>
+            <li>✅ Vocabulary tailored to your profession</li>
+            <li>✅ Personalized word suggestions weekly</li>
+            <li>✅ Track your progress and mastery</li>
+          </ul>
+          <div class="text-center mt-4">
+            {% comment %} Make sure this URL name exists in urls.py {% endcomment %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-muted">
+    <a href="{% url 'register_user' %}" class="btn btn-success btn-lg">Sign Up for $20/month</a>
+  </div>
+</div>
+{% endblock %}

@@ -10,3 +10,8 @@ def users(request):
   context = {'user': request.user}
   return render(request, 'myfirst.html', context)
 
+def home(request):
+    return render(request, 'home.html')
+
+def pricing(request):
+    return render(request, 'pricing.html')
