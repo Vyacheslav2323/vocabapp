@@ -4,7 +4,7 @@ from django.contrib.auth.views import LogoutView
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-    path('', views.users, name='vocab_list'),
+    path('', views.users, name='home'),
     path('users/', include('django.contrib.auth.urls')),
     path('users/', include('users.urls')),
 ]

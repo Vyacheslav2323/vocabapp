@@ -27,19 +27,19 @@
           </li>
           {% if user.is_authenticated %}
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'login'%}">Logout</a>
+              <a class="nav-link" href="{% url 'logout_user'%}">Logout</a>
             </li>
           {% else %}
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'login'%}">Login</a>
+              <a class="nav-link" href="{% url 'register_user'%}">Register</a>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'login_user'%}">Login</a>
             </li>
           {% endif %}
         </ul>
       </div>
     </nav>
-    
-    <p>User is authenticated: {{ user.is_authenticated }}</p>
-    <p>Username: {{ user.username }}</p>
 
 
     <div class="container">{% block content %} {% endblock %}</div>
