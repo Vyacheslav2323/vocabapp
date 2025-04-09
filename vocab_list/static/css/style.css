@@ -1,0 +1,118 @@
+/* Global Styles: Ensure the body is black with white text */
+body {
+  background-color: #000000 !important;  /* Force pure black */
+  color: #ffffff !important;             /* Force white text */
+  font-family: 'Orbitron', sans-serif;   /* Optional, for a sci-fi feel */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+html, body, * {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='32' width='32'><text y='25' font-size='28'>🛸</text></svg>") 16 16, auto !important;
+  background-image: url('/static/images/stars.jpg');
+}
+/* Navbar styling for dark theme */
+.navbar {
+  background-color: #000000 !important;  /* Force navbar to be black */
+  margin-left: -10%;
+}
+
+/* Navigation links: default to white, with a neon green glow on hover */
+.navbar-nav .nav-link {
+  color: #ffffff !important;             /* White by default */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #6dfcaa !important;             /* Alien green color on hover */
+  text-shadow: 0 0 8px #6dfcaa, 0 0 16px #6dfcaa;
+}
+
+/* Navbar brand text with alien styling */
+.navbar-brand .alien-word {
+  font-family: 'AlienFont', sans-serif;  /* Replace 'AlienFont' with your actual font name, if imported */
+  color: #6dfcaa !important;              /* Alien green color */
+  text-shadow: 0 0 8px #6dfcaa;
+  font-size: 2rem;                       /* Adjust size as needed */
+  letter-spacing: 2px;
+}
+
+/* Additional Component Styling (for example, the jumbotron) */
+.jumbotron {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none;
+}
+
+/* Optional: Style for buttons if you want similar effects */
+.btn-alien {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #6dfcaa;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-alien:hover {
+  background-color: #6dfcaa;
+  color: #000000;
+  box-shadow: 0 0 10px #6dfcaa, 0 0 20px #6dfcaa;
+}
+@font-face {
+  font-family: 'AlienFont';
+  src: url('../fonts/AlienScript-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Alien font initially */
+.alien-word {
+  font-family: 'AlienFont', sans-serif;
+  transition: font-family 0.3s ease, color 0.3s ease, text-shadow 0.5s ease;
+    color: #6dfcaa;
+  text-shadow: 0 0 10px #6dfcaa, 0 0 20px #6dfcaa;
+}
+
+/* When translated */
+.alien-word.human {
+  font-family: 'Arial', sans-serif; /* Or any readable font */
+  color: #6dfcaa;
+  text-shadow: 0 0 10px #6dfcaa, 0 0 20px #6dfcaa;
+  animation: glow 1s ease-in-out;
+}
+
+/* Optional: Keep the glow effect after animation */
+.alien-word.human:hover {
+  color: #6dfcaa;
+  text-shadow: 0 0 10px #6dfcaa;
+}
+
+/* Glow animation keyframes */
+@keyframes glow {
+  0% {
+    text-shadow: none;
+    color: white;
+  }
+  50% {
+    text-shadow: 0 0 15px #6dfcaa, 0 0 25px #6dfcaa;
+    color: #6dfcaa;
+  }
+  100% {
+    text-shadow: 0 0 10px #6dfcaa;
+    color: #6dfcaa;
+  }
+}
+
+p{
+  line-height: 1;
+}
+h1{
+  line-height: 1;
+}
+h2{
+  line-height: 1;
+}
+h3{
+  line-height: 1;
+}
+section{
+  margin-bottom: 10%;
+}
